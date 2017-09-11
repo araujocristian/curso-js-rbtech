@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            == Igual a;
+            === Igual em valor e tipo;
+            != Diferente a;
+            !== Diferente em valor e tipo
+            > maior que
+            < menor que
+            >= maior igual
+            <= menor igual
+
+            && e
+            || ou
+            ! not
+        */
+        var n = 5;
+
+        //operador ternario
+        var resp = (n >= 7) ? "Maior que 7": "menor";
+
+        if(n > 5){
+
+        }else if(n==5){
+
+        }else{
+
+        }
+
+        // Switch Case
+        var dia = new Date().getDay;
+        switch (dia) {
+            case 6:
+                console.log("Sabado");
+                break;
+            case 0:
+                console.log("Domingo");
+                break;
+            default:
+                console.log("Dia de semana");
+                break;
+        }
+
+        // Estrutura de Repetição
+
+        var ling = ['PHP', 'JAVA', 'C++', 'ASP'];
+        for(i=0; i< ling.length; i++){
+            if(i==2) continue;
+            console.log(ling[i]);
+        }
+        
+        var i =0;
+        while (i < 7) { //ERRO DE ACESSO DE MEMORIA
+            console.log(ling[i]);
+            i++;
+        }
+
+        do{
+
+        }while (condition) {
+            
+        }
+    </script>
+</body>
+</html>
