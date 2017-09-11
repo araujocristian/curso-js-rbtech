@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 09 - JS</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>    
+    <!--<img id="imagem" src="imagem.jpg" alt="Texto Alt"> -->
+    <p id="demo"></p>
+    <!--<h1 onclick="this.innerHTML = 'Obrigado!'">Clique Aqui</h1>-->
+    <h1 onclick="funcao(this)">Clique Aqui</h1>
+    
+    <script>
+        // document.getElementById('demo').innerHTML = 'Texto do meu paragrafo';
+        //console.log(document.getElementsByTagName('p'))
+        /* var x = document.getElementsByClassName('exemplo');
+
+        x[0].innerHTML = "Texto 0"
+        x[1].innerHTML = "Texto 1"
+        x[2].innerHTML = "Texto 2"
+        */
+
+        var x = document.querySelectorAll('p.exemplo'); //Não funciona no IE < 9
+        console.log(x);        
+
+        /*  RETORNOS DO document.
+
+        document.baseURI / document.body / document.doctype / document.documentURI
+        document.domain / document.head / document.inputEncoding / document.lastModfied
+        document.title / document.URL / document.forms / document.links / document.images / document.scripts
+        */
+
+        //document.write("Isso é um teste"); // Escreve dentro do DOC
+
+        //document.getElementById('imagem').alt = 'Texto 2';
+
+        document.getElementById('demo').style.color = 'red';
+
+        function funcao(elemento) {
+            elemento.innerHTML = 'Obrigado!';
+
+        /*
+            onload - Apos carregar a pagina
+            onclick - Apos o clik
+            onchange - Após mudanças
+            onmouseover - Quando o mouse ta no elemento
+            onmouseout - quando o mouse sai do elemento
+            onfocus - quando gera o foco no elemento
+            onmousedown - quando o click do mouse ainda n acabou
+            onmouseup - quando soltar o botao do mouse
+        */
+        }
+    </script>
+    
+</body>
+</html>
