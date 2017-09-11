@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dataAtual = new Date();
+        var data70 = new Date(86400000); //milisegundos
+       // var dataQualquer = new Date(ano, mes, dia, hora, minuto, segundo, milisegundo); // string
+        var dataUTC = dataAtual.toUTCString();
+        var dataStr = dataAtual.toDateString();
+        var getData = dataAtual.getDate(); //Tem para cada propriedade da data;
+        var setData = dataAtual.getDate(21); //Tem para cada propriedade da data;
+        //Para formatar a data, temos que usar os gets
+
+        function formatData(data = new Date()) {
+            var dia = data.getDate();
+            var mes = data.getMonth()+1;
+            var ano = data.getFullYear();
+
+            if(dia.toString().length == 1){
+                dia = "0" + dia;
+            }
+
+            if(mes.toString().length == 1){
+                mes = "0" + mes;
+            }
+
+            return dia+'/'+mes+'/'+ano;
+        }
+
+        console.log(formatData());
+    </script>
+</body>
+</html>

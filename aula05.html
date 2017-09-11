@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var txt = 'Pegou fogo na caixa d\'Agua'; // "\" Para colocar caracteres especiais
+        
+        tamStr = txt.length;
+        priStr = txt.indexOf("fogo");
+        ultStr = txt.lastindexOf("fogo");
+        pesqStr = txt.search("fogo");
+        slicStr = txt.slice(0,4); // = substring(0,4); substr(ini,tam);
+        replStr = txt.replace("fogo", "agua");
+        upStr = txt.toUpperCase();
+        lwStr = txt.toLowerCase();
+
+        console.log(txt);
+
+        var num = 30.474546;
+
+        casNum = num.toFixed(2); //Quantidades de casas decimais
+        prcNum = num.toPrecision(2); //Quantidade de digitos
+
+        console.log(num);
+    </script>
+</body>
+</html>
